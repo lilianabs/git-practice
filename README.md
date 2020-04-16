@@ -2,11 +2,13 @@
 
 This is a dummy repository to practice making a Pull Request (PR).
 
+## Table of Contents
+
 The following sections explain the tasks that you need to perform to create a PR:
 
-* Step 1: Create a Local Copy of the Remote Repository
-* Step 2: Create a New Branch
-* Step 3: Create a Pull Request in the Original GitHub Repository
+* [Step 1: Create a Local Copy of the Remote Repository](#step-1-create-a-local-copy-of-the-remote-repository)
+* [Step 2: Create a New Branch](#step-2-create-a-new-branch)
+* [Step 3: Create a Pull Request](#step-3-create-a-pull-request)
 
 ## Step 1: Create a Local Copy of the Remote Repository
 
@@ -24,6 +26,7 @@ To create a local copy of a remote repository:
 1. Change the current working directory to the location where you want to store the repository’s contents using the change directory (**cd**) command.
 1. Enter `git clone`, and then paste the URL you copied in Step 5. 
 
+[⇧ back to top](#table-of-contents)
 
 ## Step 2: Create a New Branch
 You need to create a new branch to commit the changes you make to your local copy of the GitHub repository. 
@@ -55,11 +58,12 @@ To create a new branch and commit changes to it:
    ```
    >**Note:** Replace the text enclosed in `"..."` with some brief explanation of the additions or modifications you performed to the local copy of the repository.
 
+[⇧ back to top](#table-of-contents)
 
-## Step 3: Create a Pull Request in the Original GitHub Repository
-Finally, you need to push your changes to the local copy of the repository created in the [previous step](#step-2-create-a-new-branch) and create a PR in the original GitHub repository that you forked.
+## Step 3: Create a Pull Request
+Finally, you need to push your changes to the local copy of the repository created in the [previous step](#step-2-create-a-new-branch) and create a PR in the GitHub repository that you forked.
 
-To create a a Pull Request in the original GitHub repository:
+To create a a Pull Request in the forked GitHub repository:
 
 1. Open your terminal application.
 1. Change the current working directory to the location where you stored the repository’s contents using the change directory (**cd**) command.
@@ -78,6 +82,13 @@ To create a a Pull Request in the original GitHub repository:
    ```
 
 1. Go to your copy of the repository in GitHub (forked repository).
-1. Click the ![new-pull-request](images/new-pull-request.png) button.
-1. Select the `name-for-your-branch` branch.
-1. 
+1. Click the ![compare-and-pull-request](images/compare-and-pull-request.png) button.
+
+   You see a window similar to this:
+
+    ![open-pull-request](images/open-pull-request.png)
+
+1. Enter a comment explaining the additions or modifications you created in the **Leave a comment** field.
+1. Click the ![create-pull-request](images/create-pull-request.png) button.
+
+[⇧ back to top](#table-of-contents)
