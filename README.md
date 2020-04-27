@@ -78,7 +78,7 @@ To create a a Pull Request in the forked GitHub repository:
 1. Push your changes (commited in the branch you created) to the master branch of the original GitHub repository:
 
    ```
-    git push origin name-for-you-branch
+    git push --set-upstream origin name-for-you-branch
    ```
 
 1. Go to your copy of the repository in GitHub (forked repository).
