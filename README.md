@@ -9,6 +9,7 @@ The following sections explain the tasks that you need to perform to create a PR
 * [Step 1: Create a Local Copy of the Remote Repository](#step-1-create-a-local-copy-of-the-remote-repository)
 * [Step 2: Create a New Branch](#step-2-create-a-new-branch)
 * [Step 3: Create a Pull Request](#step-3-create-a-pull-request)
+* [Step 4: Update your Copy of the Remote Repository](#step-4-update-your-local-copy-of-the-remote-repository)
 
 ## Step 1: Create a Local Copy of the Remote Repository
 
@@ -90,5 +91,10 @@ To create a a Pull Request in the forked GitHub repository:
 
 1. Enter a comment explaining the additions or modifications you created in the **Leave a comment** field.
 1. Click the ![create-pull-request](images/create-pull-request.png) button.
+
+[⇧ back to top](#table-of-contents)
+
+## Step 4: Update your Copy of the Remote Repository
+
 
 [⇧ back to top](#table-of-contents)
