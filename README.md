@@ -9,6 +9,7 @@ The following sections explain the tasks that you need to perform to create a PR
 * [Step 1: Create a Local Copy of the Remote Repository](#step-1-create-a-local-copy-of-the-remote-repository)
 * [Step 2: Create a New Branch](#step-2-create-a-new-branch)
 * [Step 3: Create a Pull Request](#step-3-create-a-pull-request)
+* [Step 4: Update your Local Copy of the Remote Repository](#step-4-update-your-local-copy-of-the-remote-repository)
 
 ## Step 1: Create a Local Copy of the Remote Repository
 
@@ -38,10 +39,10 @@ To create a new branch and commit changes to it:
 1. Create a new branch:
    
    ```
-    git checkout -b name-for-your-branch
+    git checkout -b name-of-your-branch
    ```
    
-     A message informing you that git switched to the branch `name-for-you-branch appears`.
+     A message informing you that git switched to the branch `name-of-you-branch appears`.
    
    > **Suggestion:** Create a meaningful name for your branch so that you can easily remember what you modified or added to the repository.
 
@@ -73,12 +74,12 @@ To create a a Pull Request in the forked GitHub repository:
     git status
    ```
 
-   >**Note:** You can the current branch to a different one by running the command `git branch name-for-you-branch`.
+   >**Note:** You can the current branch to a different one by running the command `git branch name-of-you-branch`.
 
 1. Push your changes (commited in the branch you created) to the master branch of the original GitHub repository:
 
    ```
-    git push origin name-for-you-branch
+    git push --set-upstream origin name-of-you-branch
    ```
 
 1. Go to your copy of the repository in GitHub (forked repository).
@@ -90,5 +91,67 @@ To create a a Pull Request in the forked GitHub repository:
 
 1. Enter a comment explaining the additions or modifications you created in the **Leave a comment** field.
 1. Click the ![create-pull-request](images/create-pull-request.png) button.
+
+[⇧ back to top](#table-of-contents)
+
+## Step 4: Update your Local Copy of the Remote Repository
+
+It is important to keep your own copy of the repository up to date. It prevents you from having merge conflicts when creating a pull request.
+
+You need to add the original repository (the one you forked) to your list of tracked repositories so that you can merge the original repository's master branch into your local copy's master branch. 
+
+To update your local copy of the GitHub repository:
+
+1. Open your terminal application.
+1. Change the current working directory to the location where you stored the repository’s contents using the change directory (**cd**) command.
+1. Switch to you local copy's master branch:
+   
+   ```
+    git checkout master
+   ```
+
+1. Add the original repository's GitHub adress to your tracked repositories.
+
+   ```
+    git remote add upstream https://github.com/original-owner-username/original-repository.git
+   ```
+   >Note: To view your list of tracked repositories, run the command `git remote -v`.
+
+1. Obtain the latest version of the original repository's master branch:
+
+   ```
+    git fetch upstream
+   ```
+
+   Git fetches the branch *upstream/master*.
+
+1. Merge the branch upstream/master into your local master branch:
+
+   ```
+    git merge upstream/master
+   ```
+
+1. (Optional) Update your GitHub copy:
+
+    ```
+     git push
+    ```
+
+If you are working on a branch that is different from master, then you can also merge the master branch into it.
+
+To merge the master branch into another branch:
+
+1. Switch to your branch:
+
+   ```
+     git branch name-of-your-branch
+    ```
+
+1. Merge the master branch into the *name-of-your-branch* branch:
+
+   ```
+     git merge master
+    ```
+
 
 [⇧ back to top](#table-of-contents)
