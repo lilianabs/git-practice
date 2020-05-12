@@ -48,11 +48,18 @@ To create a new branch and commit changes to it:
    
    > **Suggestion:** Create a meaningful name for your branch so that you can easily remember what you modified or added to the repository.
 
+   Once you have the new branch, you can change, create, or modify files in the repository. 
+
 1. Stage your changes:
 
    ```
     git add .
    ```
+   or 
+   ```
+   git add name-of-file.md
+   ```
+   >**Note**: The best practice is to use the name of the file you modified.
 
 1. Commit your changes:
 
