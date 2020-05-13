@@ -154,4 +154,4 @@ To merge the master branch into another branch:
     ```
 
 
-[⇧ back to top](#table-of-contents)
+[⇧ back to top](#table-of-contents)..
