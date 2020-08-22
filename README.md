@@ -157,7 +157,7 @@ To merge the master branch into another branch:
 1. Switch to your branch:
 
    ```
-     git branch name-of-your-branch
+     git chekout name-of-your-branch
     ```
 
 1. Merge the master branch into the *name-of-your-branch* branch:
